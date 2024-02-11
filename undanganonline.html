@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Undangan</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Background color untuk memastikan readability */
+  }
+  .bg {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://satumomen.com/themes/bird-charm/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px; /* Menambahkan padding */
+  }
+  .invitation {
+    position: relative; 
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px 20px 20px; 
+    width: 100%;
+    max-width: 600px; 
+  }
+
+  /* Perbarui untuk mengatur gambar di atas invitation */
+  .image-atas {
+    position: absolute;
+    top: 0px; /* Atur sesuai kebutuhan */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between; /* Menyebarkan gambar di kedua sisi */
+    width: calc(100% - 40px); /* Sesuaikan dengan padding .bg */
+  }
+
+  .image-bawah {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between; /* Menyebarkan gambar di kedua sisi */
+    width: calc(100% - 40px); /* Sesuaikan dengan padding .bg */
+  }
+
+  .frame-image {
+    width: 50%; /* Menyesuaikan ukuran gambar */
+    animation: fadeIn 2s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @media (min-width: 768px) {
+    .bg {
+      width: 110%;
+      margin: auto;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="bg">
+  <div class="image-atas">
+    <div class="frame-image-left">
+      
+    </div>
+    <div class="frame-image" style="transform: rotateY(180deg);margin: 0 0 0 39px;">
+      
+    </div>
+  </div>
+  <div class="image-bawah">
+    <div class="frame-image-left">
+      
+    </div>
+    
+  </div>
+  <div class="invitation">
+    <h2>You Are Invited to Our</h2>
+    <h1>Annual Fashion Show</h1>
+    <p>Raya Collection 2024</p>
+    <p>REBIRTH : A NEW STORIES BEGIN</p>
+    <p>Dear Tamu Undangan,</p>
+    <p>Date: 31st December 2024</p>
+    <p>Venue: Club Solitaire</p>
+    <p>Time: 7:00 PM onwards</p>
+    <button type="button">Open Invitation</button>
+  </div>
+  <img class="frame-image" src="https://satumomen.com/themes/bird-charm/frame-tm.png" alt="Frame Decoration Left" style="transform: rotateY(180deg);width: 290px;top: 0;position: absolute; right: 0;">
+  <img class="frame-image" src="https://satumomen.com/themes/bird-charm/frame-tm.png" alt="Frame Decoration Right" style="width: 290px;top: 0;position: absolute; left: 0;">
+  <img class="frame-image" src="https://satumomen.com/themes/bird-charm/frame-bl.png" alt="Frame Decoration Left" style="width: 211px;bottom: 0;position: absolute; left: 0;">
+  <img class="frame-image" src="https://satumomen.com/themes/bird-charm/frame-br.png" alt="Frame Decoration Right" style="width: 195px;bottom: 0;position: absolute; right: 0;">
+</div>
+
+</body>
+</html>
